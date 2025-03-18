@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홀리스틱</title>
+    <script src="./resource/js/jquery-3.3.1.min.js"></script>
+    <script src="./resource/js/swiper.min.js"></script>
+    <script src="./resource/js/style.js"></script>
+    <link rel="stylesheet" href="./resource/css/module.css">
+    <link rel="stylesheet" href="./resource/css/style.css">
+    <link rel="stylesheet" href="./resource/css/responsive.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="contents-wrap login">
+            <div class="con">
+                <h1 class="logo">
+                    <img src="./resource/images/logo.png" alt="홀리스틱">
+                </h1>
+                <div class="login-wrap">
+                    <label for="userId" class="userId icn">
+                        <input type="text" id="userId" class="userId" placeholder="아이디를 입력해주세요">
+                    </label>
+                    <label for="userPw" class="userPw icn">
+                        <input type="password" id="userPw" class="userPw" placeholder="비밀번호를 입력해주세요">
+                    </label>
+                    <label for="userIdSave" class="label-check">
+                        <input type="checkbox" id="userIdSave">
+                        <div class="checkBox"></div>
+                        <span>아이디 기억하기</span>
+                    </label>
+                    <div class="btn-wrap longin-btn-wrap">
+                        <button type="button" class="btn btn-login">로그인</button>
+                        <a href="./page00.find-step01.html" class="btn no-style forget">아이디, 비밀번호를 잊어버리셨나요?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="dimmed" class="dimmed">
+        <div class="popup box">
+            <div class="title">
+                <img src="./resource/images/popup-error.svg" alt="#">
+                <p>앗!</p>
+            </div>
+            <div class="inner-text">
+                <p>아이디 혹은 비밀번호가 일치하지 않아요!<br>계정을 다시한번 확인해주세요!</p>
+            </div>
+            <div class="btn-wrap">
+                <button type="button" class="btn close">확인</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
