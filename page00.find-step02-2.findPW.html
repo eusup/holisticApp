@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홀리스틱</title>
+    <script src="./resource/js/jquery-3.3.1.min.js"></script>
+    <script src="./resource/js/swiper.min.js"></script>
+    <script src="./resource/js/style.js"></script>
+    <link rel="stylesheet" href="./resource/css/module.css">
+    <link rel="stylesheet" href="./resource/css/style.css">
+    <link rel="stylesheet" href="./resource/css/responsive.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="contents-wrap login find">
+            <div class="con">
+                <div class="btn-wrap">
+                    <button type="button" class="btn icn-only back">
+                        <img src="./resource/images/icn_back.svg" alt="뒤로가기">
+                    </button>
+                </div>
+                <div class="tab-contents">
+                    <div role="tabpanel" class="act">
+                        <div class="input-wrap">
+                            <label for="newPW" class="flex">
+                                <input type="password" id="newPW" placeholder="새 비밀번호를 입력해주세요">
+                                <button class="btn icn-only">
+                                    <div class="eyes">
+                                        <span></span>
+                                    </div>
+                                    <div class="eyes">
+                                        <span></span>
+                                    </div>
+                                </button>
+                            </label>
+                            <p class="alert">사용할 수 없는 비밀번호에요!</p>
+                        </div>
+                        <div class="input-wrap">
+                            <label for="newPW" class="flex">
+                                <input type="password" id="newPW" placeholder="새 비밀번호를 다시한번 입력해주세요">
+                                <button class="btn icn-only">
+                                    <div class="eyes">
+                                        <span></span>
+                                    </div>
+                                    <div class="eyes">
+                                        <span></span>
+                                    </div>
+                                </button>
+                            </label>
+                            <p class="alert">비밀번호가 일치하지않아요!</p>
+                        </div>
+                        <div class="btn-wrap">
+                            <a href="./page00.find-id-step02.html" type="button" class="btn">비밀번호 변경하기</a>
+                        </div>
+                    </div>
+                    <div role="tabpanel">
+                        <p class="caption">홀리스틱은 민감한 개인정보를 저장해두지 않아요!<br>비밀번호는 찾을 수 없지만 비밀번호를 변경해드릴순 있어요!</p>
+                        <div class="input-wrap">
+                            <label for="find_userId" class="flex">
+                                <input type="text" placeholder="아이디를 입력해주세요">
+                            </label>
+                            <p class="alert">가입된 번호가 없어요!</p>
+                        </div>
+                        <div class="input-wrap">
+                            <label for="phoneNum" class="flex">
+                                <input type="tel" placeholder="휴대폰번호를 입력해주세요" class="phoneNum">
+                                <button type="button" class="btn no-style signNum">인증번호 받기</button>
+                            </label>
+                            <p class="alert">가입된 번호가 없어요!</p>
+                        </div>
+                        <div class="input-wrap">
+                            <label for="phoneNum" class="flex">
+                                <input type="num" placeholder="인증번호를 입력해주세요" class="phoneNum">
+                                <p>5:00</p>
+                            </label>
+                            <p class="alert">인증번호가 올바르지 않아요!</p>
+                        </div>
+                        <div class="btn-wrap">
+                            <a href="./page00.find-id-step02-2.findPW.html" type="button" class="btn">비밀번호 변경하기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="dimmed" class="dimmed">
+        <div class="popup box">
+            <div class="title">
+                <img src="./resource/images/popup-error.svg" alt="#">
+                <p>앗!</p>
+            </div>
+            <div class="inner-text">
+                <p>아이디 혹은 비밀번호가 일치하지 않아요!<br>계정을 다시한번 확인해주세요!</p>
+            </div>
+            <div class="btn-wrap">
+                <button type="button" class="btn close">확인</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홀리스틱</title>
+    <script src="./resource/js/jquery-3.3.1.min.js"></script>
+    <script src="./resource/js/swiper.min.js"></script>
+    <script src="./resource/js/style.js"></script>
+    <link rel="stylesheet" href="./resource/css/module.css">
+    <link rel="stylesheet" href="./resource/css/style.css">
+    <link rel="stylesheet" href="./resource/css/responsive.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="con flex">
+                <button type="button" id="m_menuICN" class="btn icn-only">
+                    <img src="./resource/images/icn_menu.svg" alt="메뉴 열기">
+                </button>
+                <div class="flex util">
+                    <button type="button" class="btn icn-only">
+                        <img src="./resource/images/icn_letter.svg" alt="쪽지">
+                    </button>
+                    <button type="button" class="btn icn-only">
+                        <img src="./resource/images/icn_user.svg" alt="마이페이지">
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div class="contents-wrap main">
+            <div class="con top">
+                <p class="class-name">캠퍼스명이 들어갑니다.</p>
+                <div class="box">
+                    <div class="user-name">
+                        <b>김청취닷컴</b>
+                        <span>님!</span>
+                        <p>안녕하세요</p>
+                    </div>
+                    <div class="flex data">
+                        <p>오늘의 숙제</p>
+                        <b>n</b>
+                        <p>개</p>
+                    </div>
+                </div>
+            </div>
+            <div class="con">
+                <div class="flex title">
+                    <p>오늘의 숙제</p>
+                    <button type="button" class="btn no-style">요일 변경</button>
+                </div>
+                <div>
+                    <ul class="flex assignment-wrap">
+                        <li class="listening">
+                            <button type="button" class="btn box">
+                                <div class="flex">
+                                    <p>Listening</p>
+                                    <div class="point">
+                                        <p>9,999</p>
+                                        <img src="./resource/images/icn_point.svg" alt="포인트">
+                                    </div>
+                                </div>
+                                <p class="title oneLine">test</p>
+                                <p class="duration">
+                                    <span>진행률</span>
+                                    <span>50%</span>
+                                </p>
+                            </button>
+                        </li>
+                        <li class="speaking">
+                            <button type="button" class="btn box">
+                                <div class="flex">
+                                    <p>speaking</p>
+                                    <div class="point">
+                                        <p>9,999</p>
+                                        <img src="./resource/images/icn_point.svg" alt="포인트">
+                                    </div>
+                                </div>
+                                <p class="title oneLine">test</p>
+                                <p class="duration">
+                                    <span>진행률</span>
+                                    <span>50%</span>
+                                </p>
+                            </button>
+                        </li>
+                        <li class="voca">
+                            <button type="button" class="btn box">
+                                <div class="flex">
+                                    <p>voca</p>
+                                    <div class="point">
+                                        <p>9,999</p>
+                                        <img src="./resource/images/icn_point.svg" alt="포인트">
+                                    </div>
+                                </div>
+                                <p class="title oneLine">test</p>
+                                <p class="duration">
+                                    <span>진행률</span>
+                                    <span>50%</span>
+                                </p>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="con">
+                <div class="flex title">
+                    <p>Daily Report</p>
+                    <button type="button" class="btn no-style">요일 변경</button>
+                </div>
+                <div class="list-wrap">
+                    <ul>
+                        <li class="listening">
+                            <button type="button" class="btn no-style flex">
+                                <img src="./resource/images/icn_listening.svg" alt="리스닝">
+                                <div>
+                                    <p class="title oneLine">제목이 들어갑니다. 제목이 들어갑니다. 제목이 들어갑니다. 제목이 들어갑니다.</p>
+                                    <p class="time">
+                                        <span>학습시간</span>
+                                        <span>99:99:99</span>
+                                    </p>
+                                </div>
+                            </button>
+                        </li>
+                        <li class="speaking">
+                            <button type="button" class="btn no-style flex">
+                                <img src="./resource/images/icn_speaking.svg" alt="스피킹">
+                                <div>
+                                    <p class="title oneLine">제목이 들어갑니다. 제목이 들어갑니다. 제목이 들어갑니다. 제목이 들어갑니다.</p>
+                                    <p class="time">
+                                        <span>학습시간</span>
+                                        <span>99:99:99</span>
+                                    </p>
+                                </div>
+                            </button>
+                        </li>
+                        <li class="voca">
+                            <button type="button" class="btn no-style flex">
+                                <img src="./resource/images/icn_voca.svg" alt="보카">
+                                <div>
+                                    <p class="title oneLine">제목이 들어갑니다. 제목이 들어갑니다. 제목이 들어갑니다. 제목이 들어갑니다.</p>
+                                    <p class="time">
+                                        <span>학습시간</span>
+                                        <span>99:99:99</span>
+                                    </p>
+                                </div>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="con">
+                <div class="flex title">
+                    <p>나의 랭킹</p>
+                    <div class="tab-in-tab">
+                        <ul class="flex">
+                            <li class="act">
+                                <button type="button" class="btn no-style">누적</button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn no-style">월간</button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn no-style">전국랭킹</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rank" id="tabContents">
+                    <ul>
+                        <li class="flex its-me">
+                            <div class="flex name">
+                                <span class="num">99</span>
+                                <span>내 이름</span>
+                            </div>
+                            <div class="point">
+                                <p>9,999</p>
+                                <img src="./resource/images/icn_point.svg" alt="포인트">
+                            </div>
+                        </li>
+                        <li class="flex">
+                            <div class="flex name">
+                                <span class="num">1</span>
+                                <span>내 이름</span>
+                            </div>
+                            <div class="point">
+                                <p>9,999</p>
+                                <img src="./resource/images/icn_point.svg" alt="포인트">
+                            </div>
+                        </li>
+                        <li class="flex">
+                            <div class="flex name">
+                                <span class="num">2</span>
+                                <span>내 이름</span>
+                            </div>
+                            <div class="point">
+                                <p>9,999</p>
+                                <img src="./resource/images/icn_point.svg" alt="포인트">
+                            </div>
+                        </li>
+                        <li class="flex">
+                            <div class="flex name">
+                                <span class="num">3</span>
+                                <span>내 이름</span>
+                            </div>
+                            <div class="point">
+                                <p>9,999</p>
+                                <img src="./resource/images/icn_point.svg" alt="포인트">
+                            </div>
+                        </li>
+                        <li class="flex">
+                            <div class="flex name">
+                                <span class="num">4</span>
+                                <span>내 이름</span>
+                            </div>
+                            <div class="point">
+                                <p>9,999</p>
+                                <img src="./resource/images/icn_point.svg" alt="포인트">
+                            </div>
+                        </li>
+                        <li class="flex">
+                            <div class="flex name">
+                                <span class="num">5</span>
+                                <span>내 이름</span>
+                            </div>
+                            <div class="point">
+                                <p>9,999</p>
+                                <img src="./resource/images/icn_point.svg" alt="포인트">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="dimmed" class="dimmed act">
+        <div id="mMenu" class="popup m-menu act">
+            <div class="flex top">
+                <button type="button" class="btn icn-only close">
+                    <img src="./resource/images/icn_closed.svg" alt="닫기">
+                </button>
+            </div>
+            <div class="con">
+                <div class="flex user-data">
+                    <div class="box">
+                        <p class="big">김청취닷컴</p>
+                        <div class="point">
+                            <p>9,999</p>
+                            <img src="./resource/images/icn_point.svg" alt="포인트">
+                        </div>
+                    </div>
+                    <a href="#" class="box blue-box">
+                        <div class="flex">
+                            <p>이용기간</p>
+                            <p>D-999</p>
+                        </div>
+                        <p class="big">
+                            <span>결제하기</span>
+                            <img src="./resource/images/icn_btnArrow.svg" alt="#">
+                        </p>
+                    </a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#" class="flex btn no-style">
+                            <img src="./resource/images/icn_menu01.svg" alt="#">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

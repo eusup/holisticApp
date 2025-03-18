@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 페이지</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <button class="copy"><span>복사할 텍스트</span></button>
+</body>
+
+<script>
+    $(document).ready(function () {
+        $(".copy").click(function () {
+            var text = $(this).find("span").text();
+            var tempInput = $("<input>");
+            $("body").append(tempInput);
+            tempInput.val(text).select();
+            document.execCommand("copy");
+            tempInput.remove();
+        });
+    });
+</script>
+
+</html>
